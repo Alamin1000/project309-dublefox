@@ -56,7 +56,7 @@
       <!-- offcanvas-start-end -->
 
       <!-- header-section -->
-      <header class="header-section">
+      <header class="header-section" id="sticky-header">
         <div class="header-in">
           <div class="header-section__inner">
             <a href="index.html" class="header__logo">
@@ -81,7 +81,11 @@
             <div class="hero__left-content">
               <h1 class="h1">DoubleFox GmbH Germany</h1>
               <h3>LOREM IPSUM DOLOR</h3>
-              <a href="page2.html" class="default-button">CorrMeas</a>
+              <a
+                href="page2.html"
+                class="default-button default-button--bordered-white bottom-button"
+                >CorrMeas</a
+              >
             </div>
             <img src="images/Raster-300x146.png" alt="" class="hero__cnt-img" />
           </div>
@@ -92,10 +96,10 @@
         <section class="what-do-section">
           <img src="images/shape-left.png" alt="" class="what-do__bg-shape" />
           <div class="container">
-            <div class="what-do-section__inner">
-              <div class="cont-blk">
+            <div class="what-do-section__inner row">
+              <div class="cont-blk col-md-9 pe-xl-5">
                 <h2 class="h2">What does the company do?</h2>
-                <h4 class="color-theme1">Lorem ipsum dolor sit amet</h4>
+                <h4 class="h4 color-theme1">Lorem ipsum dolor sit amet</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -141,11 +145,15 @@
 
         <!-- gi-section -->
         <section class="gi-section">
-          <img src="images/Raster-300x146.png" alt="" class="gi__sec__shape" />
           <div class="container">
-            <div class="gi-section__inner">
-              <div class="cont-blk gi__content">
-                <h2 class="h2">General Information</h2>
+            <div class="gi-section__inner row">
+              <img
+                src="images/Raster-300x146.png"
+                alt=""
+                class="gi__sec__shape"
+              />
+              <div class="cont-blk gi__content col-md-6">
+                <h2 class="h2 mb-1">General Information</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -165,15 +173,18 @@
         <div class="contact-section">
           <div class="container">
             <div class="contact-section__inner">
+              <div class="h-0">&nbsp;</div>
               <div
                 class="sec-title contact-section__title cont-blk cont-blk--right"
               >
-                <h2 class="h2">Get in touch</h2>
-                <h4 class="h4">I will be happy to answer your questions</h4>
+                <h2 class="h2 mb-1">Get in touch</h2>
+                <h4 class="h4 color-theme1 mb-0">
+                  I will be happy to answer your questions
+                </h4>
               </div>
 
               <div class="contact-form">
-                <div class="contact-form__main row">
+                <div class="contact-form__main row g-2">
                   <div class="col-12">
                     <div class="single-input-x">
                       <div class="input-x-outer">
@@ -183,6 +194,7 @@
                           placeholder="Your name"
                         />
                       </div>
+                      <label class="x-b-label">The field is required.</label>
                     </div>
                   </div>
                   <div class="col-12">
@@ -261,8 +273,10 @@
           <div class="footer-section__inner">
             <p class="copyright">© 2023 DoubleFox GmbH</p>
             <p class="ls-menu mb-0">
-              <a href="#" class="color-theme1">Imprint </a> |
-              <a href="#" class="color-theme1">Privacy Policy</a>
+              <a href="#" class="hover-underline color-theme1">Imprint </a> |
+              <a href="#" class="hover-underline color-theme1"
+                >Privacy Policy</a
+              >
             </p>
           </div>
         </div>

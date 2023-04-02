@@ -1,6 +1,101 @@
+/* buttons */
+.default-button {
+    min-height: 48px;
+    padding: 5px 27px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--theme__color1);
+    color: #fff;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+.default-button:hover {
+    background: #0b07db;
+}
+.default-button.default-button--bordered-white {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}
+.default-button.default-button--bordered-white:hover {
+    color: #0e0e0e;
+    background: #fff;
+}
+
+
+
+.bt-t-button {
+    color: var(--theme__color1);
+}
+.bt-t-button:hover {
+    color: inherit;
+    text-decoration: underline !important;
+}
+/* buttons--end */
+
+/* -checkbox-model- */
+.checkbox-model {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 19px;
+    width: 19px;
+    border-radius: 0px;
+    font-size: 14px;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+  }
+  .checkbox-model::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: inherit;
+  }
+  .checkbox-model::after {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Pro";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background: var(--theme__color1); */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #636363;
+    font-size:inherit;
+    border-radius: inherit;
+    opacity: 0;
+    font-weight: 300;
+    transition: 0.3s;
+  }
+  .checkbox-model:checked::after {
+    opacity: 1;
+  }
+
 /* small-tools */
+.h-0 {
+    height: 0 !important;
+}
 .underline {
     text-decoration: underline !important;
+}
+.hover-underline:hover {
+    text-decoration: underline !important; 
 }
 .h-initial {
     height: initial !important;

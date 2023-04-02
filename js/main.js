@@ -24,6 +24,21 @@
     }
   });
 
+  var wind = $(window);
+  var sticky = $("#sticky-header");
+  wind.on("scroll", function () {
+    var scroll = wind.scrollTop();
+    if (scroll < 5) {
+      sticky.removeClass("sticky");
+    } else {
+      sticky.addClass("sticky");
+    }
+  });
+  $(window).on("load resize", function () {
+    $(".header-section").height($(".header-in").outerHeight());
+    $("body").css("--header-height", $(".header-in").outerHeight() + "px");
+  });
+
   // owl-carousel
   $(".brand-active").owlCarousel({
     loop: true,
