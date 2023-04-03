@@ -40,28 +40,28 @@
   });
 
   // owl-carousel
-  $(".brand-active").owlCarousel({
-    loop: true,
-    margin: 50,
+  $(".slider-active").owlCarousel({
+    // loop: true,
+    margin: 30,
+    items: 2,
+    autoplay: true,
     responsiveClass: true,
-    nav: false,
+    nav: true,
+    dots: true,
+    dotsEach: 1,
     navText: [
-      '<span class="fas fa-chevron-left fa-2x"></span>',
-      '<span class="fas fa-chevron-right fa-2x"></span>',
+      '<i class="fal fa-chevron-left"></i>',
+      '<i class="fal fa-chevron-right"></i>',
     ],
     responsive: {
       0: {
         items: 1,
-        nav: false,
       },
       600: {
-        items: 3,
-        nav: false,
+        items: 2,
       },
       1000: {
-        items: 4,
-        nav: false,
-        loop: false,
+        items: 2,
       },
     },
   });

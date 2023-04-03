@@ -29,27 +29,9 @@
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
         <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">CorrMeas</a></li>
         </ul>
       </div>
       <div class="offcanvas-overlay"></div>
@@ -62,12 +44,15 @@
             <a href="index.html" class="header__logo">
               <img src="images/logo_doublefox.png" alt="" />
             </a>
-            <div class="main-menu">
+            <div class="main-menu d-lg-block d-none">
               <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="page2.html">CorrMeas</a></li>
               </ul>
             </div>
+            <a href="#" class="offcanvas-open d-lg-none ms-auto">
+              <i class="fal fa-bars"></i>
+            </a>
           </div>
         </div>
       </header>
@@ -98,7 +83,10 @@
           <div class="container">
             <div class="what-do-section__inner row">
               <div class="cont-blk col-md-9 pe-xl-5">
-                <h2 class="h2">What does the company do?</h2>
+                <h2 class="h2">
+                  What does the <br class="d-sm-none" />
+                  company do?
+                </h2>
                 <h4 class="h4 color-theme1">Lorem ipsum dolor sit amet</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -152,7 +140,7 @@
                 alt=""
                 class="gi__sec__shape"
               />
-              <div class="cont-blk gi__content col-md-6">
+              <div class="cont-blk gi__content col-lg-6">
                 <h2 class="h2 mb-1">General Information</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
