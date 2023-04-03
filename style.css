@@ -665,6 +665,12 @@ p:last-child{
 .show-img-row {
 
 }
+.show-image  {
+  width: 100%;
+}
+.show-image .img  {
+  width: 100%;
+}
 /* ---show-section---end */
 
 
@@ -772,9 +778,12 @@ p:last-child{
   transform: translate(-50%,0);
 }
 .slider .owl-dots {
-  margin: 75px 0 0;
+  margin: 75px auto 0;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+  width: max-content;
 }
 .slide {
 
@@ -813,7 +822,10 @@ p:last-child{
   width: 10px;
   border: 1px solid #474747 !important;
   border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer !important;
 }
+.slider-dots-1 .owl-dot:hover,
 .slider-dots-1 .owl-dot.active {
   border-width: 5px !important;
 }

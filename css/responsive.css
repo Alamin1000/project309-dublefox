@@ -1,12 +1,31 @@
 
 
 @media (max-width: 1399px) {
- 
+    .c-hero__row__left .h1 {
+        font-size: 40px;
+        margin: 0 0 28px;
+    }
+    .c-hero__row__left h3 {
+        font-size: 27px;
+        margin: 0 0 14px;
+    }
+    .c-hero__row__left .shape {
+        width: 250px;
+    }
+
+
+    .c-hero__row__right {
+        min-height: 670px;
+    }
 }
 
 
 @media (max-width: 1199px) {
- 
+    .c-hero__row__left__content {
+        padding-top: 16%;
+        padding-left: 6%;
+        padding-right: 20px;
+    }
 }
 
 
@@ -54,6 +73,19 @@
     .contact-section__inner {
         max-width: 500px;
     }
+
+
+    .c-hero__row__left {
+        width: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    .c-hero__row__right {
+        min-height: 540px;
+    }
+    .c-hero__row__left .shape {
+        margin-right: -125px;
+    }
 }
 
 
@@ -99,6 +131,88 @@
         font-size: 28px;
         margin: 0 0 15px;
     }
+
+
+    .c-hero__row__right {
+        display: none;
+    }
+    .c-hero__row__left {
+        width: 100%;
+    }
+    .c-hero__row__left .h1 {
+        font-size: 28px;
+        margin: 0 0 18px;
+        font-weight: 800;
+    }
+    .c-hero__row__left h3 {
+        font-size: 26px;
+        margin: 0 0 20px;
+    }
+    .c-hero__row__left .shape {
+        margin-right: -150px;
+        width: 300px;
+    }
+    .c-hero__row__left__content {
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .mbl-txt-left {
+        text-align: left !important;
+    }
+    .c-hero__bt {
+        padding-top: 10%;
+        padding-bottom: 6%;
+    }
+    .show-section {
+        padding-bottom: 14%;
+        padding-top: 10%;
+    }
+
+
+    .benefit-grid {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .benefit-grid__item:nth-child(n) {
+        border: none;
+        border-bottom: 1px solid #c1ebff;
+    }
+    .benefit-grid__item:last-child {
+        border-bottom: none;
+    }
+    .benefit-grid__item h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--theme__color1);
+    }
+    .benefit-grid__item {
+        padding: 7% 0;
+    }
+
+
+    .example-section {
+        padding-top: 23px;
+    }
+    .example-card h3 {
+        margin: 0 0 17px;
+        font-size: 22px;
+    }
+    .example-card p {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .example-card {
+        padding: 21px 16px;
+    }
+
+    .slider-section {
+        padding-bottom: 12%;
+        padding-top: 10%;
+    }
+
+
 }
 
 
