@@ -86,6 +86,11 @@
     .c-hero__row__left .shape {
         margin-right: -125px;
     }
+
+
+    .privacy-section {
+        padding: 40px 0 40px;
+    }
 }
 
 
